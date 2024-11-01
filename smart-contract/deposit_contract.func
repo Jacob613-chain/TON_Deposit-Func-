@@ -1,0 +1,7 @@
+int website_wallet_address = 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef;
+void deposit() {
+    int msg_value = get_msg_value();
+    int user_wallet_address = get_sender_address();
+    send_raw_message(website_wallet_address, msg_value, 0);
+    log_event("Deposit received", user_wallet_address, msg_value);
+}

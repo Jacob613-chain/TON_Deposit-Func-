@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "blueprint": "^2.1.5",
+    "ton": "^13.9.0"
+  }
+}
